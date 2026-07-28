@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:800px;
+            margin:30px auto;
+            background:white;
+            border:3px solid black;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#d62828;
+            margin-bottom:20px;
+        }
+
+        nav{
+            text-align:center;
+            margin-bottom:25px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:royalblue;
+            font-size:24px;
+            font-weight:bold;
+            margin:0 18px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        .form-box{
+            width:550px;
+            margin:auto;
+            border:2px solid black;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            color:green;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-spacing:10px;
+        }
+
+        td{
+            font-size:22px;
+            font-weight:bold;
+            vertical-align:middle;
+        }
+
+        td:first-child{
+            width:180px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea{
+            width:100%;
+            padding:8px;
+            font-size:18px;
+            border:2px solid black;
+        }
+
+        textarea{
+            resize:none;
+            height:70px;
+        }
+
+        /* Radio Button Alignment */
+        .gender label{
+            font-size:20px;
+            font-weight:bold;
+            margin-right:20px;
+        }
+
+        .gender input[type="radio"]{
+            width:auto;
+            margin-right:6px;
+            vertical-align:middle;
+        }
+
+        .buttons{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        button{
+            padding:8px 20px;
+            font-size:20px;
+            font-weight:bold;
+            border:2px solid black;
+            border-radius:8px;
+            background:white;
+            cursor:pointer;
+            margin:5px;
+        }
+
+        button:hover{
+            background:royalblue;
+            color:white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="form-box">
+
+        <h2>New Employee Register Here</h2>
+
+        <form action="login.html">
+
+            <table>
+
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" placeholder="Enter Name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" placeholder="Enter Password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" placeholder="Enter Email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td class="gender">
+
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td>
+                        <input type="tel" placeholder="Enter Mobile Number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>State:</td>
+                    <td>
+                        <select>
+                            <option>Select State</option>
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <select>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>Canada</option>
+                            <option>Australia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <textarea placeholder="Enter Address"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

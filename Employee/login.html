@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Login</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:650px;
+            margin:50px auto;
+            background:#fff;
+            border:3px solid green;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:red;
+            margin-bottom:20px;
+        }
+
+        nav{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:blue;
+            font-size:24px;
+            font-weight:bold;
+            margin:0 18px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        form{
+            width:420px;
+            margin:20px auto;
+            border:2px solid black;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:25px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:12px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        input[type="email"],
+        input[type="password"]{
+            width:100%;
+            padding:8px;
+            font-size:18px;
+            border:2px solid black;
+        }
+
+        .btn{
+            display:block;
+            margin:20px auto 0;
+            padding:8px 25px;
+            font-size:22px;
+            font-weight:bold;
+            border:2px solid black;
+            border-radius:10px;
+            background:white;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:royalblue;
+            color:white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <!-- CHANGE IS HERE -->
+    <form action="emphome.html" method="get">
+
+        <h2>New Employee Login Here</h2>
+
+        <table>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="Enter Email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" required>
+                </td>
+            </tr>
+
+        </table>
+
+        <input type="submit" value="Login" class="btn">
+
+    </form>
+
+</div>
+
+</body>
+</html>

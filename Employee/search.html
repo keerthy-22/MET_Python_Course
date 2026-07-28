@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:1000px;
+            margin:40px auto;
+            background:white;
+            border:3px solid royalblue;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:red;
+            margin-bottom:20px;
+        }
+
+        nav{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:blue;
+            font-size:22px;
+            font-weight:bold;
+            margin:0 18px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        h2{
+            text-align:center;
+            color:green;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            text-align:center;
+        }
+
+        th,td{
+            border:2px solid black;
+            padding:12px;
+            font-size:18px;
+        }
+
+        th{
+            background:royalblue;
+            color:white;
+        }
+
+        tr:nth-child(even){
+            background:#f8f8f8;
+        }
+
+        tr:hover{
+            background:#e6f0ff;
+        }
+
+        .back{
+            text-align:center;
+            margin-top:25px;
+        }
+
+        .back a{
+            text-decoration:none;
+            font-size:20px;
+            color:white;
+            background:royalblue;
+            padding:10px 20px;
+            border-radius:6px;
+        }
+
+        .back a:hover{
+            background:green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="emphome.html">Employee Home</a>
+    </nav>
+
+    <h2>Employee Details</h2>
+
+    <table>
+
+        <tr>
+            <th>Emp ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Mobile</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td>rahul@gmail.com</td>
+            <td>Male</td>
+            <td>9876543210</td>
+            <td>Telangana</td>
+            <td>India</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Priya</td>
+            <td>priya@gmail.com</td>
+            <td>Female</td>
+            <td>9123456780</td>
+            <td>Karnataka</td>
+            <td>India</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Kiran</td>
+            <td>kiran@gmail.com</td>
+            <td>Male</td>
+            <td>9988776655</td>
+            <td>Andhra Pradesh</td>
+            <td>India</td>
+        </tr>
+
+    </table>
+
+    <div class="back">
+        <a href="emphome.html">Back</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Employee</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:700px;
+            margin:40px auto;
+            background:#fff;
+            border:3px solid royalblue;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:red;
+            margin-bottom:20px;
+        }
+
+        nav{
+            text-align:center;
+            margin-bottom:25px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:blue;
+            font-size:22px;
+            font-weight:bold;
+            margin:0 15px;
+        }
+
+        nav a:hover{
+            color:red;
+        }
+
+        h2{
+            text-align:center;
+            color:green;
+            margin-bottom:20px;
+        }
+
+        form{
+            width:100%;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:12px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:8px;
+            font-size:16px;
+            border:2px solid #000;
+            border-radius:4px;
+        }
+
+        textarea{
+            resize:none;
+            height:70px;
+        }
+
+        .buttons{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .btn{
+            padding:10px 25px;
+            font-size:18px;
+            font-weight:bold;
+            border:2px solid black;
+            border-radius:8px;
+            background:white;
+            cursor:pointer;
+            margin:10px;
+        }
+
+        .btn:hover{
+            background:royalblue;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="emphome.html">Employee Home</a>
+    </nav>
+
+    <h2>Update Employee Details</h2>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>Employee ID</td>
+                <td><input type="text" placeholder="Enter Employee ID"></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder="Enter Name"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="Enter Email"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" placeholder="Enter Mobile Number"></td>
+            </tr>
+
+            <tr>
+                <td>State</td>
+                <td>
+                    <select>
+                        <option>Telangana</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Karnataka</option>
+                        <option>Tamil Nadu</option>
+                        <option>Kerala</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea placeholder="Enter Address"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="buttons">
+            <input type="submit" value="Update" class="btn">
+            <input type="reset" value="Clear" class="btn">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
